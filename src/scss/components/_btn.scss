@@ -4,9 +4,20 @@
     padding: .7rem 1.5rem;
     font-weight: 500;
     background-color: $primary-color;
+    color: $text-color-white;
+    transform: translateY(0) scale(1);
     @include transition-ease;
 
-    // &:hover {
-    //     // background-color: lighten(80%);
-    // }
+    &:hover {
+        color: $text-color-white;
+        background-color: lighten( $primary-color, 10%);
+    }
+
+    &--hero {
+        &:hover {
+            color: currentColor;
+            transform: translateY(-5px) scale(1.1);
+            background-color: lighten( $primary-color, 10%);
+        }
+    }  
 }

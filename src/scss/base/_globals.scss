@@ -9,10 +9,20 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 a {
     text-decoration: none;
-    color: $text-color-white;
+    color: $primary-color;
+    @include transition-ease;
+
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
+
+section {
+    padding: 4rem 0;
 }

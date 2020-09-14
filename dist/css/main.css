@@ -7,11 +7,17 @@ html {
   font-size: 100%; }
 
 body {
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: 'Open Sans', sans-serif; }
 
 a {
   text-decoration: none;
-  color: #fff; }
+  color: #37A;
+  transition: all .3s ease-in-out; }
+  a:hover {
+    color: #D40; }
+
+section {
+  padding: 4rem 0; }
 
 .container {
   width: 90%;
@@ -42,12 +48,31 @@ a {
   margin-top: 4rem; }
 
 .text {
-  font-size: 1.3rem;
-  line-height: 1.7; }
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #707070;
+  font-weight: 300; }
+  .text--white {
+    color: #fff; }
+
+.heading-1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin-bottom: 2rem; }
+  .heading-1--primary {
+    color: #37A; }
+
+.heading-2 {
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem; }
+  .heading-2--primary {
+    color: #37A; }
 
 .logo__icon:link, .logo__icon:visited {
   font-size: 1.4rem;
   font-weight: 700;
+  color: #fff;
   transition: all .3s ease-in-out; }
 
 .logo__icon:hover, .logo__icon:active {
@@ -59,7 +84,21 @@ a {
   padding: .7rem 1.5rem;
   font-weight: 500;
   background-color: #37A;
+  color: #fff;
+  transform: translateY(0) scale(1);
   transition: all .3s ease-in-out; }
+  .btn:hover {
+    color: #fff;
+    background-color: #4891c8; }
+  .btn--hero:hover {
+    color: currentColor;
+    transform: translateY(-5px) scale(1.1);
+    background-color: #4891c8; }
+
+.icon {
+  font-size: 4rem;
+  padding-right: 2rem;
+  color: #37A; }
 
 .nav {
   width: 100%;
@@ -77,15 +116,30 @@ a {
       display: inline-block;
       padding: .7rem 1.5rem;
       font-weight: 500;
+      color: #fff;
       transition: all .3s ease-in-out; }
     .nav ul li a:hover, .nav ul li a:active {
       background-color: #37A; }
+
+.section-about__body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 2rem; }
+
+.section-about__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+  .section-about__item:nth-child(3) .icon {
+    padding-right: 4rem; }
 
 .header {
   position: relative;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url(../img/infinite-loop-01.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 100vh; }
 
 .hero {

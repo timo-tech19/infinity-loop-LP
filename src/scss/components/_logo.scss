@@ -4,6 +4,7 @@
     &__icon:visited {
         font-size: 1.4rem;
         font-weight: 700;
+        color: $text-color-white;
         @include transition-ease;
     }
 
