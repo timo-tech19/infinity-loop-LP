@@ -1,0 +1,24 @@
+.header {
+    position: relative;
+    background-image: linear-gradient(to right, rgba(0,0,0,.9), rgba(0,0,0,.3)), url(../img/infinite-loop-01.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+
+.hero {
+    @include center-abs;
+    text-align: center;
+    color: $text-color-white;
+
+    &__title {
+        font-size: 3.2rem;
+        font-weight: 500;
+    }
+
+    &__title,
+    &__sub {
+        @include t-shadow;
+    }
+}

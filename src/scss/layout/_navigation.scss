@@ -1,0 +1,36 @@
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+
+    ul {
+        list-style: none;
+        display: flex;
+
+        li:not(:last-child) {
+            margin-right: 1rem;
+        }
+
+        li {
+            a {
+                &:link,
+                &:visited {
+                    font-size: 1.2rem;
+                    display: inline-block;
+                    padding: .7rem 1.5rem;
+                    font-weight: 500;
+                    @include transition-ease;
+                }
+
+                &:hover,
+                &:active {
+                    background-color: $primary-color;
+                }
+            }
+            
+        }
+    }
+
+}

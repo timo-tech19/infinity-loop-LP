@@ -1,0 +1,12 @@
+.btn {
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: .7rem 1.5rem;
+    font-weight: 500;
+    background-color: $primary-color;
+    @include transition-ease;
+
+    // &:hover {
+    //     // background-color: lighten(80%);
+    // }
+}

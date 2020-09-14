@@ -1,0 +1,14 @@
+.logo {
+
+    &__icon:link,
+    &__icon:visited {
+        font-size: 1.4rem;
+        font-weight: 700;
+        @include transition-ease;
+    }
+
+    &__icon:hover,
+    &__icon:active {
+        color: $primary-color;
+    }
+}

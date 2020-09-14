@@ -1,0 +1,42 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.m {
+    &b {
+        &--sm {
+            margin-bottom: .5rem;
+        }
+
+        &--md {
+            margin-bottom: 1rem;
+        }
+
+        &--lg {
+            margin-bottom: 2rem;
+        }
+
+        &--xl {
+            margin-bottom: 4rem;
+        }
+    }
+
+    &t {
+        &--sm {
+            margin-top: .5rem;
+        }
+
+        &--md {
+            margin-top: 1rem;
+        }
+
+        &--lg {
+            margin-top: 2rem;
+        }
+
+        &--xl {
+            margin-top: 4rem;
+        }
+    }
+}
