@@ -23,3 +23,22 @@
         @include t-shadow;
     }
 }
+
+.section-header {
+    text-align: center;
+    margin-bottom: 5rem;
+    color: #fff;
+}
+
+.section-heading {
+    &--primary {
+        color: $primary-color;
+    }
+
+    &__sub {
+        width: 50%;
+        margin: 0 auto;
+        font-size: .9rem;
+        line-height: 1.7;
+    }
+}
