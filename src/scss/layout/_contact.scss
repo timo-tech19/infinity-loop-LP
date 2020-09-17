@@ -1,0 +1,25 @@
+.contact {
+    display: flex;
+
+    &__box {
+        margin-right: auto;
+    }
+
+    &__icons {
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+        color: $text-color-white;
+        cursor: pointer;
+        @include transition-ease;
+
+        &:hover {
+            color: $primary-color;
+        }
+        
+        i {
+            font-size: 3rem;
+            margin-right: 2rem;
+        }
+    
+    }
+}

@@ -71,6 +71,10 @@ section {
   .heading-2--primary {
     color: #37A; }
 
+.copy {
+  text-align: center;
+  padding-bottom: 2rem; }
+
 .logo__icon:link, .logo__icon:visited {
   font-size: 1.4rem;
   font-weight: 700;
@@ -117,6 +121,32 @@ section {
   font-size: 4rem;
   padding-right: 2rem;
   color: #37A; }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-right: 6rem;
+  margin-left: auto; }
+  .form input[type=text],
+  .form input[type=email],
+  .form textarea {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    padding: 1rem;
+    background: none;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1rem; }
+  .form textarea {
+    height: 10rem;
+    font-size: 1.5rem; }
+  .form input[type=submit] {
+    width: 50%;
+    border: none;
+    border-radius: 10px; }
 
 .nav {
   width: 100%;
@@ -184,6 +214,26 @@ section {
   .gallery img {
     width: 18%;
     height: auto; }
+
+.contact {
+  display: flex; }
+  .contact__box {
+    margin-right: auto; }
+  .contact__icons {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s ease-in-out; }
+    .contact__icons:hover {
+      color: #37A; }
+    .contact__icons i {
+      font-size: 3rem;
+      margin-right: 2rem; }
+
+.footer {
+  background-image: url(../img/infinite-loop-03.jpg);
+  background-size: cover; }
 
 .header {
   position: relative;

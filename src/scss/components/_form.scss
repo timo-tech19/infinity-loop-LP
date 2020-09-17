@@ -1,0 +1,32 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin-right: 6rem;
+    margin-left: auto;
+
+    input[type=text],
+    input[type=email],
+    textarea {
+        margin-bottom: 1.5rem;
+        width: 100%;
+        padding: 1rem;
+        background: none;
+        outline: none;
+        border: 1px solid $text-color-white;
+        border-radius: 10px;
+        color: $text-color-white;
+        font-size: 1rem;
+    }
+
+    textarea {
+        height: 10rem;
+        font-size: 1.5rem;
+    }
+
+    input[type=submit] {
+        width: 50%;
+        border: none;
+        border-radius: 10px;
+    }
+}
